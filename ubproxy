@@ -75,6 +75,8 @@ logs="/var/log/proxychangerlog"
 class Sub:
     def __init__(self, base):
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+        self.window.resize(150, 100)
+        self.window.set_position(gtk.WIN_POS_CENTER)
         self.window.set_title("Authorization")
         self.vbox = gtk.VBox()
         self.hbox0 = gtk.HBox()
@@ -172,6 +174,8 @@ class Base:
         
         self.entry2.show()
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+        self.window.resize(250, 150)
+        self.window.set_position(gtk.WIN_POS_CENTER)
         self.window.add(self.box0)
         self.label1.show()
         self.label2.show()
